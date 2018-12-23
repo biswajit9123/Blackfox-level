@@ -1,14 +1,11 @@
 import discord
-from discord.ext import commands
-import os
-import random
-import json
+from discord.ext.commands import Bot
 import asyncio
-import colorsys
-import time
+import os
+import json
 
-client = commands.Bot(description="Blackfox Official Bot", command_prefix=commands.when_mentioned_or("^"), pm_help = True)
-client.remove_command('help')
+bot = Bot(description="Blackfox is best", command_prefix="^")
+bot.remove_command('help')
 
 #show when it connects to discord   
 @bot.event 
