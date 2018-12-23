@@ -16,7 +16,7 @@ async def on_ready():
     print('Logged in as')
     print(client.user.name)
     
-@bot.event
+@bot.command
 async def on_message(message):
     with open("users.json", "r") as f:
         users = json.load(f)
