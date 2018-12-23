@@ -3,6 +3,7 @@ from discord.ext.commands import Bot
 import asyncio
 import os
 import random 
+import time 
 import json
 
 bot = Bot(description="Blackfox is best", command_prefix="^")
