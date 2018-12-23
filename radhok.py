@@ -49,5 +49,6 @@ async def level_up(users, user, channel, server):
     if lvl_start < lvl_end:
         await bot.send_message(channel, f":tada: Congrats {user.mention}, you levelled up to level {lvl_end}!")
         users[user.id + "-" + server.id]["level"] = lvl_end
-  
-client.run(os.getenv('Token'))
+
+        
+client.run(os.environ('Token'))
