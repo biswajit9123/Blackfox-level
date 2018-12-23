@@ -51,4 +51,4 @@ async def level_up(users, user, channel, server):
         users[user.id + "-" + server.id]["level"] = lvl_end
 
         
-client.run(os.environ('Token'))
+bot.run(os.environ['Token'])
