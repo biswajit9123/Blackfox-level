@@ -10,13 +10,8 @@ import time
 client = commands.Bot(description="Blackfox Official Bot", command_prefix=commands.when_mentioned_or("^"), pm_help = True)
 client.remove_command('help')
 
-#show when it connects to discord
-@client.event
-async def on_ready():
-    print('Logged in as')
-    print(client.user.name)
-    
-@bot.command
+#show when it connects to discord   
+@bot.event 
 async def on_message(message):
     with open("users.json", "r") as f:
         users = json.load(f)
